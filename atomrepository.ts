@@ -51,7 +51,7 @@ class AtomRepository {
       updated: new Date(),
       ttl: 1440,
       copyright:
-        "https://njump.me/npub1auwq2edy2tahk58uepwyvjjmdvkxdvmrv492xts8m2s030gla0msruxp7s",
+        "https://nostr.cxplay.org/npub1auwq2edy2tahk58uepwyvjjmdvkxdvmrv492xts8m2s030gla0msruxp7s",
     });
 
     function resumeString(inputString: string): string {
@@ -74,7 +74,7 @@ class AtomRepository {
           date: new Date(event.created_at * 1000),
           published: new Date(event.created_at * 1000),
           id: event.id,
-          link: `https://njump.me/${event.id}`,
+          link: `https://nostr.cxplay.org/${event.id}`,
           content: event.content,
           author: [{ name: resumenpub(nostr.nip19.npubEncode(event.pubkey)) }],
         });
@@ -86,7 +86,7 @@ class AtomRepository {
           date: new Date(event.created_at * 1000),
           published: new Date(event.created_at * 1000),
           id: event.id,
-          link: `https://njump.me/${event.id}`,
+          link: `https://nostr.cxplay.org/${event.id}`,
           content: event.content,
           author: [{ name: resumenpub(nostr.nip19.npubEncode(event.pubkey)) }],
         });
