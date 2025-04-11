@@ -26,6 +26,9 @@ const relays = [
   "wss://nos.lol",
   "wss://nostr.wine",
   "wss://relay.mostr.pub",
+  "wss://relay.nostr.band",
+  "wss://relay.nostr.moe",
+  "wss://relay.cxplay.org"
 ];
 
 // Create a new NDK instance with explicit relays
